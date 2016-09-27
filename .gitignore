@@ -45,3 +45,15 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+.htaccess
+index.php
+licencia.txt
+license.txt
+readme.html
+wp-activate.php
+wp-admin
+wp-includes
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-config.php
