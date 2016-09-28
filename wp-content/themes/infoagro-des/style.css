@@ -26,6 +26,7 @@ nav ul {
 .padding-sides {}
 .padding-up-down {}
 .margin-bottom {}
+.margin-right {}
 .float-left {}
 .float-right {}
 .clear {}
@@ -98,6 +99,62 @@ header nav.categories-nav ul.categories li a {
 	text-transform: uppercase;
 } 
 header nav.categories-nav ul.categories li a:hover {} 
+
+/* Home content styling */
+#home-banner {
+	overflow: hidden;
+	width: 100%;
+}
+#home-banner #slide-banner {
+	overflow: hidden;
+	width: 62%;
+}
+#home-banner #slide-banner ul.slides {
+	height: 385px;
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 690px;
+}
+#home-banner #slide-banner ul.slides li {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#home-banner #slide-banner ul.slides li.active {}
+#home-banner #slide-banner ul.slides li a {}
+#home-banner #slide-banner ul.slides li a:hover {}
+#home-banner #slide-banner ul.slides li.active a {}
+#home-banner #slide-banner ul.slides li.active a:hover {}
+
+#home-banner #slide-banner-sidebar {
+	overflow: hidden;
+	width: 36%;
+}
+#home-banner #slide-banner-sidebar ul.slides-control {
+	border-top: 1px solid #888;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#home-banner #slide-banner-sidebar ul.slides-control li {
+	padding: 10px 0;
+	border-bottom: 1px solid #888;
+	height: 77px;
+	box-sizing: border-box;
+}
+#home-banner #slide-banner-sidebar ul.slides-control li a {
+	font-size: 18px;
+	text-decoration: none;
+	color: #888;
+	line-height: 26px;
+}
+#home-banner #slide-banner-sidebar ul.slides-control li a:hover {}
+#home-banner #slide-banner-sidebar ul.slides-control li.active {}
+#home-banner #slide-banner-sidebar ul.slides-control li.active a {}
+#home-banner #slide-banner-sidebar ul.slides-control li.active a:hover {}
 
 /* Responsive  styles */
 /* Between 0 and 480 */

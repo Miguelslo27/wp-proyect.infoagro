@@ -64,7 +64,7 @@
 						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/header-banner.jpg" alt="Lea la revista verde online">
 					</div>
 				</div>
-				<nav class="categories-nav padding-sides">
+				<nav class="categories-nav padding-sides margin-bottom">
 					<ul class="categories">
 						<li><a href="#">Inicio</a></li>
 						<li><a href="#">Agricultura</a></li>
