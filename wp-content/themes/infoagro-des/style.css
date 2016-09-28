@@ -1,0 +1,267 @@
+/*
+Theme Name: InfoAgro Design
+Description: InfoAgro Design - Garage Design
+Author: Juan Varela | Miguel Sosa
+Author URI: http://garage.com.uy
+Version: 1.0
+*/
+
+/* General styling */
+* { margin: 0; transition: all .1s ease; }
+body {
+	background-attachment: fixed;
+	background-image: url(images/background.jpg);
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+header {}
+footer {}
+nav ul {
+	padding: 0;
+	list-style: none;
+}
+
+/* Helper classes*/
+.padding-sides {}
+.padding-up-down {}
+.margin-bottom {}
+.float-left {}
+.float-right {}
+.clear {}
+
+/* responsive hidden by default */
+.responsive { display: none; }
+
+/* principal blocks styling */
+#wrapper {
+	background: #fff;
+	margin: auto;
+	max-width: 1200px;
+	min-width: 280px;
+	width: 100%;
+}
+#header {}
+#main {}
+#content {}
+#sidebar {}
+#delimiter {}
+#footer {}
+
+/* Header styling */
+/* nav styling */
+header nav.nav-bar {
+	background: #898b8e;
+	font-size: 14px;
+}
+header nav.nav-bar ul li a {
+	color: #fff;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+header nav.nav-bar ul li a:hover {
+	background: #a2a4a7;
+}
+
+/* Title styling */
+.site-title {
+	overflow: hidden;
+}
+#logo {}
+#header-banner {}
+
+/* Categories Nav styling */
+header nav.categories-nav {} 
+header nav.categories-nav ul.categories {
+	text-align: center;
+} 
+header nav.categories-nav ul.categories li {
+	display: inline-block;
+	margin: 0 5px;
+} 
+header nav.categories-nav ul.categories li:first-child {
+	margin: 0;
+	margin-right: 5px;
+}
+header nav.categories-nav ul.categories li:last-child {
+	margin: 0;
+	margin-left: 5px;
+}
+header nav.categories-nav ul.categories li a {
+	border-bottom: 2px solid #4e4e50;
+	color: #4e4e50;
+	display: inline-block;
+	font-size: 16px;
+	padding: 10px 22px;
+	text-decoration: none;
+	text-transform: uppercase;
+} 
+header nav.categories-nav ul.categories li a:hover {} 
+
+/* Responsive  styles */
+/* Between 0 and 480 */
+@media (max-width: 480px) {
+	.responsive.res480 {
+		display: inherit;
+	}
+	#logo img {
+		width: 100%;
+	}
+	header nav.categories-nav ul.categories li,
+	header nav.categories-nav ul.categories li a {
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+/* Between 481 and 640 */
+@media (min-width: 481px) and (max-width: 640px) {
+	/* smartphones, Android phones, landscape iPhone */
+	.responsive.res640 {
+		display: inherit;
+	}
+	header nav.nav-bar ul.pages {
+		overflow: hidden;
+	}
+	header nav.nav-bar ul.pages li {
+		display: inline-block;
+	}
+}
+
+/* Between 0 and 640 */
+@media (max-width: 640px) {}
+
+/* Between 641 and 768 */
+@media (min-width: 641px) and (max-width: 768px) {
+	/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+	.responsive.res768 {
+		display: inherit;
+	}
+	header nav.nav-bar ul.pages {
+		overflow: hidden;
+	}
+	header nav.nav-bar ul.pages li {
+		display: inline-block;
+	}
+}
+
+/* Between 0 and 768 */
+@media (max-width: 768px) {
+	/* Helper classes*/
+	.padding-sides { padding: 10px; }
+	.padding-up-down { padding: 10px; }
+	.margin-bottom { margin-bottom: 15px; }
+	.float-left { float: left; }
+	.float-right { float: right; }
+	.clear { clear: both; }
+
+	/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+	header nav.nav-bar ul {
+		text-align: center;
+	}
+	header nav.nav-bar ul.pages {
+		float: none;
+	}
+	header nav.nav-bar ul.user-cmds {
+		border-bottom: 1px solid #666;
+		overflow: hidden;
+		float: none;
+	}
+	header nav.nav-bar ul.user-cmds li {
+		box-sizing: border-box;
+		float: left;
+		width: 50%;
+	}
+	header nav.nav-bar ul.user-cmds li:first-child {
+		border-right: 1px solid #666;
+	}
+}
+
+/* Between 769 and 1024 */
+@media (min-width: 769px) and (max-width: 1024px) {
+	/* tablet, landscape iPad, lo-res laptops ands desktops */
+	.responsive.res1024 {
+		display: inherit;
+	}
+}
+
+/* Between 0 and 1024 */
+@media (max-width: 1024px) {
+	#logo {
+		text-align: center;
+		width: 100%;
+	}
+}
+
+/* From 1024 to max posible size */
+@media (min-width: 1025px) {
+	header nav.nav-bar ul li a {
+		padding: 10px 20px;
+	}
+}
+
+/* From 769 to max posible size */
+@media (min-width: 769px) {
+	/* Helper classes*/
+	.padding-sides { padding-left: 45px; padding-right: 45px; }
+	.padding-up-down { padding-top: 25px; padding-bottom: 25px; }
+	.margin-bottom { margin-bottom: 25px; }
+	.float-left { float: left; }
+	.float-right { float: right; }
+	.clear { clear: both; }
+
+	header nav.nav-bar {
+		overflow: hidden;
+	}
+	header nav.nav-bar ul {
+		overflow: hidden;
+	}
+	header nav.nav-bar ul li {
+		float: left;
+
+	}
+	header nav.nav-bar ul.pages {
+		box-sizing: border-box;
+		float: left;
+	}
+	header nav.nav-bar ul.user-cmds {
+		float: right;
+	}
+}
+
+/* Between 1025 to 1280 */
+@media (min-width: 1025px) and (max-width: 1280px) {
+	/* big landscape tablets, laptops, and desktops */
+	.responsive.res1280 {
+		display: inherit;
+	}
+	#logo {
+		width: 38%;
+	}
+	#header-banner {
+		width: 58%;
+	}
+	#logo img,
+	#header-banner img {
+		width: 100%;
+	}
+}
+
+/* Between 0 to 1280 */
+@media (max-width: 1280px) {
+	body {
+		padding: 0 10px;
+	}
+}
+
+/* From 1281 to max posible size */
+@media (min-width: 1281px) {
+	/* hi-res laptops and desktops */
+	.responsive.res1280-more {
+		display: inherit;
+	}
+}
