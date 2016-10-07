@@ -8,6 +8,7 @@
 	
 	<!-- Style.css from theme -->
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen">
+	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/ionicons.min.css">
 	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/fonts.css">
 
 	<!--[if lt IE 9]>
@@ -29,7 +30,7 @@
 						<li>
 							<a href="#">Iniciar Sesión</a>
 						</li>
-					</ul>
+					</ul> <!-- end .user-cmds.responsive.res480.res640.res768 -->
 					<ul class="pages float-left">
 						<li>
 							<a href="#">Empresa</a>
@@ -46,7 +47,7 @@
 						<li>
 							<a href="#">Contacto</a>
 						</li>
-					</ul>
+					</ul> <!-- end .pages.float-left -->
 					<ul class="user-cmds float-right responsive res1024 res1280 res1280-more">
 						<li>
 							<a href="#">Registrarme</a>
@@ -54,26 +55,26 @@
 						<li>
 							<a href="#">Iniciar Sesión</a>
 						</li>
-					</ul>
-				</nav>
+					</ul> <!-- end .user-cmds.float-right.responsive.res1024.res1280.res1280-more -->
+				</nav> <!-- end .nav-bar -->
 				<div class="site-title padding-sides padding-up-down">
 					<div id="logo" class="float-left">
 						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.png" alt="INFO AGRO">
-					</div>
+					</div> <!-- end #logo.float-left -->
 					<div id="header-banner" class="float-right responsive res1280 res1280-more">
 						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/header-banner.jpg" alt="Lea la revista verde online">
-					</div>
-				</div>
+					</div> <!-- end #header-banner.float-right.responsive.res1280.res1280-more -->
+				</div> <!-- end .site-title.padding-sides.padding-up-down -->
 				<nav class="categories-nav padding-sides margin-bottom">
 					<ul class="categories">
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Agricultura</a></li>
-						<li><a href="#">Ganadería</a></li>
-						<li><a href="#">Lechería</a></li>
-						<li><a href="#">Forestación</a></li>
-						<li><a href="#">Internacionales</a></li>
-						<li><a href="#">Empresariales</a></li>
-					</ul>
-				</nav>
-			</div> <!-- #header ends -->
+						<li class="category-home"><a href="#">Inicio</a></li>
+						<li class="category-agricultura"><a href="#">Agricultura</a></li>
+						<li class="category-ganaderia"><a href="#">Ganadería</a></li>
+						<li class="category-lecheria"><a href="#">Lechería</a></li>
+						<li class="category-forestacion"><a href="#">Forestación</a></li>
+						<li class="category-internacionales"><a href="#">Internacionales</a></li>
+						<li class="category-empresariales"><a href="#">Empresariales</a></li>
+					</ul> <!-- end .categories -->
+				</nav> <!-- end .categories-nav.padding-sides.margin-bottom -->
+			</div> <!-- end #header -->
 		</header>
