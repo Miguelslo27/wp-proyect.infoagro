@@ -15,10 +15,13 @@ body {
 	background-size: cover;
 	margin: 0;
 	padding: 0;
-	min-width: 360px;
 }
 header {}
-footer {}
+footer {
+	background: rgba(0,0,0,.75);
+	height: 300px;
+	margin-top: -50px;
+}
 nav ul {
 	padding: 0;
 	list-style: none;
@@ -58,8 +61,9 @@ nav ul {
 	background: #fff;
 	margin: auto;
 	max-width: 1200px;
-	min-width: 280px;
+	min-width: 360px;
 	width: 100%;
+	position: relative;
 }
 #header {}
 #main {
@@ -587,6 +591,9 @@ header nav.categories-nav ul.categories li a:hover {}
 @media (max-width: 1280px) {
 	body {
 		padding: 0 10px;
+	}
+	footer {
+		margin: -50px -10px 0;
 	}
 }
 
