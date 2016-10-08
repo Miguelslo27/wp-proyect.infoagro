@@ -53,6 +53,9 @@
 			</div> <!-- end #home-banner.margin-bottom -->
 
 			<div id="content" class="posts-dashboard float-left margin-bottom auric-a">
+				<div class="content-banner margin-bottom">
+					<a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/header-banner-2.jpg" alt="Asociación Nacional de Productores de Leche"></a>
+				</div>
 				<div class="resent-posts">
 					<div class="home-post category-ganaderia margin-bottom">
 						<div class="post-image float-left fifty-fifty">

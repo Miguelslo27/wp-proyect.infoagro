@@ -148,6 +148,7 @@ header nav.categories-nav ul.categories li a:hover {}
 #home-banner {
 	overflow: hidden;
 	width: 100%;
+	margin-bottom: 50px;
 }
 #home-banner #slide-banner {
 	overflow: hidden;
@@ -237,6 +238,9 @@ header nav.categories-nav ul.categories li a:hover {}
 
 /* Posts briefs */
 .posts-dashboard {}
+.posts-dashboard .content-banner img {
+	width: 100%;
+}
 .posts-dashboard .resent-posts {}
 .posts-dashboard .resent-posts .home-post {
 	overflow: hidden;
@@ -361,7 +365,34 @@ header nav.categories-nav ul.categories li a:hover {}
 }
 
 /* SIDEBAR */
-/* TODO */
+#sidebar h2.sidebar-title {}
+#sidebar h2.sidebar-title img {
+	margin-top: -32px;
+}
+#sidebar .broadcasts {}
+#sidebar .broadcasts .type-broadcast {
+	overflow: hidden;
+	padding: 15px 0;
+	position: relative;
+}
+#sidebar .broadcasts .type-broadcast .thumbnail {
+	width: 118px;
+}
+#sidebar .broadcasts .type-broadcast .thumbnail img {}
+#sidebar .broadcasts .type-broadcast .broadcast-brief {
+	bottom: 15px;
+    left: 128px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+#sidebar .broadcasts .type-broadcast .broadcast-brief h3.broadcast-title {}
+#sidebar .broadcasts .type-broadcast .broadcast-brief .stream-player {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
 
 /* Responsive  styles */
 /* Between 0 and 480 */
