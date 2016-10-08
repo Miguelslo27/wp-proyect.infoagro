@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen">
 	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/ionicons.min.css">
 	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/fonts.css">
+	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/streamer-player.css">
 
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
@@ -28,7 +29,7 @@
 							<a href="#">Registrarme</a>
 						</li>
 						<li>
-							<a href="#">Iniciar Sesión</a>
+							<a href="<?php echo wp_login_url( get_permalink() ); ?>">Iniciar Sesión</a>
 						</li>
 					</ul> <!-- end .user-cmds.responsive.res480.res640.res768 -->
 					<ul class="pages float-left">
@@ -53,7 +54,7 @@
 							<a href="#">Registrarme</a>
 						</li>
 						<li>
-							<a href="#">Iniciar Sesión</a>
+							<a href="<?php echo wp_login_url( get_permalink() ); ?>">Iniciar Sesión</a>
 						</li>
 					</ul> <!-- end .user-cmds.float-right.responsive.res1024.res1280.res1280-more -->
 				</nav> <!-- end .nav-bar -->
