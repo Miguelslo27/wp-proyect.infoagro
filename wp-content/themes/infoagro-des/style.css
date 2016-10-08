@@ -386,7 +386,10 @@ header nav.categories-nav ul.categories li a:hover {}
     right: 0;
     top: 15px;
 }
-#sidebar .broadcasts .type-broadcast .broadcast-brief h3.broadcast-title {}
+#sidebar .broadcasts .type-broadcast .broadcast-brief h3.broadcast-title {
+	font-size: 18px;
+	text-transform: uppercase;
+}
 #sidebar .broadcasts .type-broadcast .broadcast-brief .stream-player {
 	position: absolute;
 	bottom: 0;
