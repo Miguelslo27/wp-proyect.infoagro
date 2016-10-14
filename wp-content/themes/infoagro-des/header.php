@@ -24,6 +24,10 @@
 		<header>
 			<div id="header">
 				<nav class="nav-bar">
+
+					<a href="#" class="responsive res480 icon ion-navicon float-left"></a>
+					<a href="#" class="responsive res480 icon ion-log-in float-right"></a>
+
 					<ul class="user-cmds responsive res480 res640 res768">
 						<li>
 							<a href="#">Registrarme</a>
@@ -67,6 +71,11 @@
 					</div> <!-- end #header-banner.float-right.responsive.res1280.res1280-more -->
 				</div> <!-- end .site-title.padding-sides.padding-up-down -->
 				<nav class="categories-nav padding-sides margin-bottom">
+					<a href="#" class="categories-menu responsive res480">
+						<span>Menu</span>
+						<span class="icon ion-ios-arrow-down"></span>
+						<span class="icon ion-ios-arrow-up"></span>
+					</a>
 					<ul class="categories">
 						<li class="category-home"><a href="#">Inicio</a></li>
 						<li class="category-agricultura"><a href="#">Agricultura</a></li>

@@ -1,32 +1,5 @@
 console.log ('Stream Player v0.0.1');
 
-var $ = function ($selector, type, pos) {
-	var r = document.querySelectorAll ($selector);
-
-	switch (type) {
-		case 'Array':
-			var rArray = [];
-			for (var i = 0, n; n = r[i]; ++i) rArray.push (n);
-			r = rArray;
-		break;
-	}
-
-	if (pos) {
-		switch (pos) {
-			default:
-				r = r[pos];
-			case 'first':
-				r = r[0];
-			break;
-			case 'last':
-				r = r[r.length -1];
-			break;
-		}
-	}
-
-	return r;
-};
-
 window.__audios__    = [];
 window.__streamers__ = [];
 var StreamerPlyr = function ($streamPlayer) {
@@ -275,19 +248,4 @@ var StreamerPlyr = function ($streamPlayer) {
 	window.__audios__[window.__audios__.length]       = audio;
 	window.__streamers__[window.__streamers__.length] = streamer;
 	return streamer;
-}
-
-// When document is ready
-window.onload = function (event) {
-	// Get all Stream Players
-	var $streamPlayers = $ ('.stream-player', 'Array');
-	// For Each player
-	$streamPlayers.forEach (function (node, index) {
-		// Debug
-		console.log ("Node SreamerPlayer -> ", node);
-		console.log ("Index SreamerPlayer -> ", index);
-
-		node.streamer = new StreamerPlyr (node);
-		console.log ("Streamer -> ", node.streamer);
-	});
 }
