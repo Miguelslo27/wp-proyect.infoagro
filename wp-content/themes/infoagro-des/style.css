@@ -11,6 +11,7 @@ Version: 1.0
 img { display: block; }
 body {
 	background-attachment: fixed;
+	background-color: #559848;
 	background-image: url(images/background.jpg);
 	background-size: cover;
 	margin: 0;
