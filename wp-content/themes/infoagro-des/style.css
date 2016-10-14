@@ -66,6 +66,9 @@ nav ul {
 	width: 100%;
 	position: relative;
 }
+#footer {
+	min-width: 420px;
+}
 #header {}
 #main {
 	overflow: hidden;
@@ -423,7 +426,9 @@ header nav.categories-nav ul.categories li a:hover {}
 }
 #footer .footer-left {}
 #footer .footer-middle {}
-#footer .footer-right {}
+#footer .footer-right {
+	padding-left: 20px;
+}
 #footer img {}
 #footer img.white-logo {
 	margin-right: 20px;
@@ -508,6 +513,7 @@ header nav.categories-nav ul.categories li a:hover {}
 }
 #footer .social-links a.icon {}
 #footer .footer-copyright {
+	padding: 15px 0 0;
 	font-size: 13px;
 	text-align: right;
 	color: #fff;
@@ -659,6 +665,27 @@ header nav.categories-nav ul.categories li a:hover {}
 	#home-banner #slide-banner ul.slides img {
 		width: 100%;
 	}
+
+	#footer .footer-left,
+	#footer .footer-middle,
+	#footer .footer-right {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	#footer .footer-right {
+		padding: 0;
+	}
+	#footer img.white-logo {
+		display: inline-block;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+	#footer .footer-nav	{
+		float: none;
+		display: inline-block;
+		line-height: 100%;
+	}
 }
 
 /* Between 769 and 1024 */
@@ -675,6 +702,14 @@ header nav.categories-nav ul.categories li a:hover {}
 		font-size: 14px;
     	line-height: 18px;
 	}
+	#footer .footer-left {
+		width: 30%;
+		margin-right: 20px;
+	}
+	#footer img.white-logo {
+		width: 100%;
+		margin-right: 0;
+	}
 }
 
 /* Between 0 and 1024 */
@@ -685,6 +720,26 @@ header nav.categories-nav ul.categories li a:hover {}
 	}
 	#logo img {
 		display: inline-block;
+	}
+	#footer .footer-middle {
+		float: right;
+	}
+	#footer .footer-middle .nav-categories {
+		border-right: 0;
+	}
+	#footer .footer-right {
+		margin-top: 15px;
+		width: 100%;
+		text-align: center;
+	}
+	#footer .footer-right * {
+		float: none;
+	}
+	#footer .footer-right .wp-search-form form {
+		display: inline-block;
+	}
+	#footer .footer-copyright {
+		text-align: center;
 	}
 }
 
@@ -748,8 +803,15 @@ header nav.categories-nav ul.categories li a:hover {}
 	footer {
 		margin: -50px -10px 0;
 	}
+	#footer {
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
+	}
 	#footer .user-access-links {
 		clear: both;
+		margin-right: 0;
+		margin-bottom: 15px;
 	}
 	#footer .wp-search-form {
 		clear: both;
