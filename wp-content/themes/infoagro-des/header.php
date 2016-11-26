@@ -16,6 +16,13 @@
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
 
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<?php if(get_theme_mod("favicon-image") !== "") : ?>
+	<?php $faviconimage = get_theme_mod("favicon-image"); ?>
+
+    <link rel="shortcut icon" href="<?php echo esc_url($faviconimage); ?>">
+    <?php endif; ?>
+
 	<!-- Title of wp blog -->
 	<title><?php bloginfo( 'name' ); ?> <?php wp_title(); ?></title>
 </head>
@@ -30,35 +37,27 @@
 
 					<ul class="user-cmds responsive res480 res640 res768">
 						<li>
-							<a href="#">Registrarme</a>
+							<a href="<?php echo wp_registration_url(); ?>">Registrarme</a>
 						</li>
 						<li>
 							<a href="<?php echo wp_login_url( get_permalink() ); ?>">Iniciar Sesión</a>
 						</li>
 					</ul> <!-- end .user-cmds.responsive.res480.res640.res768 -->
-					<ul class="pages float-left">
-						<li>
-							<a href="#">Empresa</a>
-						</li>
-						<li>
-							<a href="#">Servicio</a>
-						</li>
-						<li>
-							<a href="#">Revista Verde</a>
-						</li>
-						<li>
-							<a href="#">Revista ANPL</a>
-						</li>
-						<li>
-							<a href="#">Contacto</a>
-						</li>
-					</ul> <!-- end .pages.float-left -->
+						<?php
+						$navMenuSettings = array(
+							'menu' => 'paginas',
+							'menu_class' => 'pages float-left',
+							'container' => ''
+						);
+
+						wp_nav_menu ($navMenuSettings);
+						?>
 					<ul class="user-cmds float-right responsive res1024 res1280 res1280-more">
 						<li>
-							<a href="#">Registrarme</a>
+							<a href="<?php echo wp_registration_url(); ?>">Registrarme</a>
 						</li>
 						<li>
-							<a href="<?php echo wp_login_url( get_permalink() ); ?>">Iniciar Sesión</a>
+							<a href="<?php echo wp_login_url (get_permalink ()); ?>">Iniciar Sesión</a>
 						</li>
 					</ul> <!-- end .user-cmds.float-right.responsive.res1024.res1280.res1280-more -->
 				</nav> <!-- end .nav-bar -->
@@ -76,7 +75,16 @@
 						<span class="icon ion-ios-arrow-down"></span>
 						<span class="icon ion-ios-arrow-up"></span>
 					</a>
-					<ul class="categories">
+					<?php
+					$catMenuSettings = array(
+						'menu' => 'categorias',
+						'menu_class' => 'categories',
+						'container' => ''
+					);
+
+					wp_nav_menu ($catMenuSettings);
+					?>
+					<!-- <ul class="categories">
 						<li class="category-home"><a href="#">Inicio</a></li>
 						<li class="category-agricultura"><a href="#">Agricultura</a></li>
 						<li class="category-ganaderia"><a href="#">Ganadería</a></li>
@@ -84,7 +92,7 @@
 						<li class="category-forestacion"><a href="#">Forestación</a></li>
 						<li class="category-internacionales"><a href="#">Internacionales</a></li>
 						<li class="category-empresariales"><a href="#">Empresariales</a></li>
-					</ul> <!-- end .categories -->
+					</ul> --> <!-- end .categories -->
 				</nav> <!-- end .categories-nav.padding-sides.margin-bottom -->
 			</div> <!-- end #header -->
 		</header>

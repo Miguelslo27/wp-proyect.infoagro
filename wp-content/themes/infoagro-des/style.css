@@ -17,6 +17,9 @@ body {
 	margin: 0;
 	padding: 0;
 }
+body.admin-bar {
+	padding-top: 32px;
+}
 header {}
 footer {
 	background: rgba(0,0,0,.5);
@@ -282,18 +285,18 @@ header nav.categories-nav ul.categories li a:hover {}
 .posts-dashboard .content-banner img {
 	width: 100%;
 }
-.posts-dashboard .resent-posts {}
-.posts-dashboard .resent-posts .home-post {
+.posts-dashboard .recent-posts {}
+.posts-dashboard .recent-posts .home-post {
 	overflow: hidden;
 	position: relative;
 }
-.posts-dashboard .resent-posts .home-post .post-image {
+.posts-dashboard .recent-posts .home-post .post-image {
 	position: relative;
 }
-.posts-dashboard .resent-posts .home-post .post-image img.post-thumbnail {
+.posts-dashboard .recent-posts .home-post .post-image img.post-thumbnail {
 	width: 100%
 }
-.posts-dashboard .resent-posts .home-post .post-image a.icon {
+.posts-dashboard .recent-posts .home-post .post-image a.icon {
 	color: rgba(255, 255, 255, 0.75);
     display: block;
     font-size: 50px;
@@ -304,41 +307,44 @@ header nav.categories-nav ul.categories li a:hover {}
     transform: translate(-50%, -50%) rotate(180deg);
     transition-duration: .25s;
 }
-.posts-dashboard .resent-posts .home-post .post-image:hover a.icon {
+.posts-dashboard .recent-posts .home-post .post-image:hover a.icon {
 	font-size: 60px;
 	opacity: 1;
 	transform: translate(-50%, -50%) rotate(0deg);
 }
-.posts-dashboard .resent-posts .home-post .post-image a.icon:hover {}
-.posts-dashboard .resent-posts .home-post .post-brief {}
-.posts-dashboard .resent-posts .home-post .post-brief h2.category-title {
+.posts-dashboard .recent-posts .home-post .post-image a.icon:hover {}
+.posts-dashboard .recent-posts .home-post .post-brief {}
+.posts-dashboard .recent-posts .home-post .post-brief h2.category-title,
+h2.category-title {
     font-size: 18px;
     font-weight: normal;
     text-transform: uppercase;
 }
-.posts-dashboard .resent-posts .home-post .post-brief h2 a {
+.posts-dashboard .recent-posts .home-post .post-brief h2 a,
+h2.category-title span {
+	background: #bbb;
 	color: #fff;
     display: inline-block;
 	padding: 8px 15px;
 	text-decoration: none;
 }
-.posts-dashboard .resent-posts .home-post .post-brief h2 a:hover {
+.posts-dashboard .recent-posts .home-post .post-brief h2 a:hover {
 	text-decoration: underline;
 }
-.posts-dashboard .resent-posts .home-post .post-brief h3.post-title {
+.posts-dashboard .recent-posts .home-post .post-brief h3.post-title {
 	font-size: 18px;
 	font-weight: normal;
 }
-.posts-dashboard .resent-posts .home-post .post-brief h3 a {
+.posts-dashboard .recent-posts .home-post .post-brief h3 a {
 	text-decoration: none;
 }
-.posts-dashboard .resent-posts .home-post .post-brief h3 a:hover {
+.posts-dashboard .recent-posts .home-post .post-brief h3 a:hover {
 	text-decoration: underline;
 }
-.posts-dashboard .resent-posts .home-post .post-brief p {
+.posts-dashboard .recent-posts .home-post .post-brief p {
 	font-size: 14px;
 }
-.posts-dashboard .resent-posts .home-post .post-brief .post-info {
+.posts-dashboard .recent-posts .home-post .post-brief .post-info {
 	background: rgba(255, 255, 255, 0.9);
     bottom: 0;
     color: #666;
@@ -346,7 +352,7 @@ header nav.categories-nav ul.categories li a:hover {}
     position: absolute;
     right: 0;
 }
-.posts-dashboard .resent-posts .home-post .post-brief .post-info span {
+.posts-dashboard .recent-posts .home-post .post-brief .post-info span {
 	float: left;
 	display: block;
 	margin-right: 5px;
@@ -354,54 +360,54 @@ header nav.categories-nav ul.categories li a:hover {}
 	line-height: 20px;
 	font-size: 13px;
 }
-.posts-dashboard .resent-posts .home-post .post-brief .post-info span.post-date,
-.posts-dashboard .resent-posts .home-post .post-brief .post-info span.post-comments {}
-.posts-dashboard .resent-posts .home-post .post-brief .post-info span > span.icon {
+.posts-dashboard .recent-posts .home-post .post-brief .post-info span.post-date,
+.posts-dashboard .recent-posts .home-post .post-brief .post-info span.post-comments {}
+.posts-dashboard .recent-posts .home-post .post-brief .post-info span > span.icon {
 	font-size: 20px;
 }
-.posts-dashboard .resent-posts .home-post .post-brief .post-info span > span:not(.icon) {}
-.posts-dashboard .resent-posts .home-post .post-brief .post-info span.post-date {
+.posts-dashboard .recent-posts .home-post .post-brief .post-info span > span:not(.icon) {}
+.posts-dashboard .recent-posts .home-post .post-brief .post-info span.post-date {
 	margin-right: 10px;
 }
-.posts-dashboard .resent-posts .home-post .post-brief .post-info span.post-date span.icon {}
-.posts-dashboard .resent-posts .home-post .post-brief .post-info span.post-date span.date {}
-.posts-dashboard .resent-posts .home-post .post-brief .post-info span.post-comments {}
-.posts-dashboard .resent-posts .home-post .post-brief .post-info span.post-comments span.icon {}
-.posts-dashboard .resent-posts .home-post .post-brief .post-info span.post-comments span.comments-count {}
-.posts-dashboard .resent-posts .home-post.category-agricultura .post-brief h2.category-title a {
+.posts-dashboard .recent-posts .home-post .post-brief .post-info span.post-date span.icon {}
+.posts-dashboard .recent-posts .home-post .post-brief .post-info span.post-date span.date {}
+.posts-dashboard .recent-posts .home-post .post-brief .post-info span.post-comments {}
+.posts-dashboard .recent-posts .home-post .post-brief .post-info span.post-comments span.icon {}
+.posts-dashboard .recent-posts .home-post .post-brief .post-info span.post-comments span.comments-count {}
+.posts-dashboard .recent-posts .home-post.category-agricultura .post-brief h2.category-title a {
 	background-color: #459d46;
 }
-.posts-dashboard .resent-posts .home-post.category-agricultura .post-brief h3.post-title a {
+.posts-dashboard .recent-posts .home-post.category-agricultura .post-brief h3.post-title a {
 	color: #459d46;
 }
-.posts-dashboard .resent-posts .home-post.category-ganaderia .post-brief h2.category-title a {
+.posts-dashboard .recent-posts .home-post.category-ganaderia .post-brief h2.category-title a {
 	background-color: #c4151c;
 }
-.posts-dashboard .resent-posts .home-post.category-ganaderia .post-brief h3.post-title a {
+.posts-dashboard .recent-posts .home-post.category-ganaderia .post-brief h3.post-title a {
 	color: #c4151c;
 }
-.posts-dashboard .resent-posts .home-posti.category-lecheria .post-brief h2.category-title a {
+.posts-dashboard .recent-posts .home-posti.category-lecheria .post-brief h2.category-title a {
 	background-color: #0060ae;
 }
-.posts-dashboard .resent-posts .home-posti.category-lecheria .post-brief h3.post-title a {
+.posts-dashboard .recent-posts .home-posti.category-lecheria .post-brief h3.post-title a {
 	color: #0060ae;
 }
-.posts-dashboard .resent-posts .home-post.category-forestacion .post-brief h2.category-title a {
+.posts-dashboard .recent-posts .home-post.category-forestacion .post-brief h2.category-title a {
 	background-color: #a16f2a;
 }
-.posts-dashboard .resent-posts .home-post.category-forestacion .post-brief h3.post-title a {
+.posts-dashboard .recent-posts .home-post.category-forestacion .post-brief h3.post-title a {
 	color: #a16f2a;
 }
-.posts-dashboard .resent-posts .home-post.category-internacionales .post-brief h2.category-title a {
+.posts-dashboard .recent-posts .home-post.category-internacionales .post-brief h2.category-title a {
 	background-color: #92278f;
 }
-.posts-dashboard .resent-posts .home-post.category-internacionales .post-brief h3.post-title a {
+.posts-dashboard .recent-posts .home-post.category-internacionales .post-brief h3.post-title a {
 	color: #92278f;
 }
-.posts-dashboard .resent-posts .home-post.category-empresariales .post-brief h2.category-title a {
+.posts-dashboard .recent-posts .home-post.category-empresariales .post-brief h2.category-title a {
 	background-color: #f4791f;
 }
-.posts-dashboard .resent-posts .home-post.category-empresariales .post-brief h3.post-title a {
+.posts-dashboard .recent-posts .home-post.category-empresariales .post-brief h3.post-title a {
 	color: #f4791f;
 }
 
@@ -531,7 +537,9 @@ header nav.categories-nav ul.categories li a:hover {}
 	line-height: 30px;
 	width: 180px;
 }
-#footer #searchform div input#s {}
+#footer #searchform div input#s {
+	padding-left: 10px;
+}
 #footer #searchform div button#searchsubmit {
 	font-size: 20px;
 	width: 40px;
@@ -628,47 +636,47 @@ header nav.categories-nav ul.categories li a:hover {}
 
 	/* Posts briefs */
 	.posts-dashboard {}
-	.posts-dashboard .resent-posts {}
-	.posts-dashboard .resent-posts .home-post {
+	.posts-dashboard .recent-posts {}
+	.posts-dashboard .recent-posts .home-post {
 		border-bottom: 1px solid #666;
 	}
-	.posts-dashboard .resent-posts .home-post .post-image {
+	.posts-dashboard .recent-posts .home-post .post-image {
 		margin-bottom: 10px;
 	}
-	.posts-dashboard .resent-posts .home-post .post-image img.post-thumbnail {}
-	.posts-dashboard .resent-posts .home-post .post-image a.icon {}
-	.posts-dashboard .resent-posts .home-post .post-image:hover a.icon {}
-	.posts-dashboard .resent-posts .home-post .post-image a.icon:hover {}
-	.posts-dashboard .resent-posts .home-post .post-brief {
+	.posts-dashboard .recent-posts .home-post .post-image img.post-thumbnail {}
+	.posts-dashboard .recent-posts .home-post .post-image a.icon {}
+	.posts-dashboard .recent-posts .home-post .post-image:hover a.icon {}
+	.posts-dashboard .recent-posts .home-post .post-image a.icon:hover {}
+	.posts-dashboard .recent-posts .home-post .post-brief {
 		position: relative;
 		padding-bottom: 10px;
 	}
-	.posts-dashboard .resent-posts .home-post .post-brief h2.category-title {}
-	.posts-dashboard .resent-posts .home-post .post-brief h2 a {}
-	.posts-dashboard .resent-posts .home-post .post-brief h2 a:hover {}
-	.posts-dashboard .resent-posts .home-post .post-brief h3.post-title {}
-	.posts-dashboard .resent-posts .home-post .post-brief h3 a {}
-	.posts-dashboard .resent-posts .home-post .post-brief h3 a:hover {}
-	.posts-dashboard .resent-posts .home-post .post-brief p {}
-	.posts-dashboard .resent-posts .home-post .post-brief .post-info {
+	.posts-dashboard .recent-posts .home-post .post-brief h2.category-title {}
+	.posts-dashboard .recent-posts .home-post .post-brief h2 a {}
+	.posts-dashboard .recent-posts .home-post .post-brief h2 a:hover {}
+	.posts-dashboard .recent-posts .home-post .post-brief h3.post-title {}
+	.posts-dashboard .recent-posts .home-post .post-brief h3 a {}
+	.posts-dashboard .recent-posts .home-post .post-brief h3 a:hover {}
+	.posts-dashboard .recent-posts .home-post .post-brief p {}
+	.posts-dashboard .recent-posts .home-post .post-brief .post-info {
 		bottom: auto;
 	    left: auto;
 	    top: 0;
 	}
-	.posts-dashboard .resent-posts .home-post .post-brief .post-info span {
+	.posts-dashboard .recent-posts .home-post .post-brief .post-info span {
 		height: 38px;
 		line-height: 38px;
 	}
-	.posts-dashboard .resent-posts .home-post .post-brief .post-info span.post-date,
-	.posts-dashboard .resent-posts .home-post .post-brief .post-info span.post-comments {}
-	.posts-dashboard .resent-posts .home-post .post-brief .post-info span > span.icon {}
-	.posts-dashboard .resent-posts .home-post .post-brief .post-info span > span:not(.icon) {}
-	.posts-dashboard .resent-posts .home-post .post-brief .post-info span.post-date {}
-	.posts-dashboard .resent-posts .home-post .post-brief .post-info span.post-date span.icon {}
-	.posts-dashboard .resent-posts .home-post .post-brief .post-info span.post-date span.date {}
-	.posts-dashboard .resent-posts .home-post .post-brief .post-info span.post-comments {}
-	.posts-dashboard .resent-posts .home-post .post-brief .post-info span.post-comments span.icon {}
-	.posts-dashboard .resent-posts .home-post .post-brief .post-info span.post-comments span.comments-count {}
+	.posts-dashboard .recent-posts .home-post .post-brief .post-info span.post-date,
+	.posts-dashboard .recent-posts .home-post .post-brief .post-info span.post-comments {}
+	.posts-dashboard .recent-posts .home-post .post-brief .post-info span > span.icon {}
+	.posts-dashboard .recent-posts .home-post .post-brief .post-info span > span:not(.icon) {}
+	.posts-dashboard .recent-posts .home-post .post-brief .post-info span.post-date {}
+	.posts-dashboard .recent-posts .home-post .post-brief .post-info span.post-date span.icon {}
+	.posts-dashboard .recent-posts .home-post .post-brief .post-info span.post-date span.date {}
+	.posts-dashboard .recent-posts .home-post .post-brief .post-info span.post-comments {}
+	.posts-dashboard .recent-posts .home-post .post-brief .post-info span.post-comments span.icon {}
+	.posts-dashboard .recent-posts .home-post .post-brief .post-info span.post-comments span.comments-count {}
 }
 @media (min-width: 641px) {
 	header nav.nav-bar ul.user-cmds.responsive.res768,
